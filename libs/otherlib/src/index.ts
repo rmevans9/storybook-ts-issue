@@ -1,1 +1,4 @@
-export * from './lib/otherlib';
+export const testFromOtherLib = {
+  one: 'test',
+  two: 'test',
+};
