@@ -1,0 +1,23 @@
+{
+  "root": "libs/otherlib",
+  "sourceRoot": "libs/otherlib/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/otherlib/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/otherlib"],
+      "options": {
+        "jestConfig": "libs/otherlib/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
