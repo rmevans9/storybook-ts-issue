@@ -1,3 +1,4 @@
+import React from "react";
 import { testFromOtherLib } from '@storybook-ts-issue/otherlib';
 import { testFromOtherLib as anotherTestDirectlyFromOtherLib } from '../../../otherlib/src';
 
@@ -16,7 +17,7 @@ export interface TestComponentProps {
 export function TestComponent(props: TestComponentProps) {
   return (
     <div>
-      <h1>Welcome to Storybook!</h1>
+      <h1>Welcome to Storybook!!</h1>
     </div>
   );
 }
